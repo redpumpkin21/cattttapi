@@ -5,7 +5,7 @@ from cat.views import CatViewSet
 
 router = routers.DefaultRouter()
 
-router.register(r'cat', CatViewSet) 
+router.register(r'cats', CatViewSet) 
 
 print(router)
 
