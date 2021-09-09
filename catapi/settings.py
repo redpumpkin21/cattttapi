@@ -61,7 +61,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'blogapi.wsgi.application'
+WSGI_APPLICATION = 'catapi.wsgi.application'
 
 
 # Database
