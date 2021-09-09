@@ -35,13 +35,15 @@ MIDDLEWARE = [
     'django.contrib.sessions.middleware.SessionMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
-    # 'django.middleware.csrf.CsrfViewMiddleware',
+    'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 CORS_ALLOW_ALL_ORIGINS = True
-ROOT_URLCONF = 'catapi.urls'
+
+ROOT_URLCONF = 'blogapi.urls'
 
 TEMPLATES = [
     {
@@ -59,7 +61,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'catapi.wsgi.application'
+WSGI_APPLICATION = 'blogapi.wsgi.application'
 
 
 # Database
